@@ -5,6 +5,7 @@ import sys
 from rich.progress import Progress
 
 from wcwidth import wcwidth
+from security import safe_command
 
 
 progress = Progress()
@@ -82,7 +83,7 @@ CELL_WIDTHS = {widths_table!r}
     with open("../rich/_cell_widths.py", "wt") as fh:
         fh.write(table_file)
 
-    subprocess.run("black ../rich/_cell_widths.py", shell=True)
+    safe_command.run(subprocess.run, "black ../rich/_cell_widths.py", shell=True)
 
 
 if __name__ == "__main__":
