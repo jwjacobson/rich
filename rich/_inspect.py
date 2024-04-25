@@ -210,7 +210,7 @@ class Inspect(JupyterMixin):
         elif not_shown_count:
             yield Text.from_markup(
                 f"[b cyan]{not_shown_count}[/][i] attribute(s) not shown.[/i] "
-                f"Run [b][magenta]inspect[/]([not b]inspect[/])[/b] for options."
+                "Run [b][magenta]inspect[/]([not b]inspect[/])[/b] for options."
             )
 
     def _get_formatted_doc(self, object_: Any) -> Optional[str]:
