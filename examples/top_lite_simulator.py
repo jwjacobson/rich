@@ -1,6 +1,5 @@
 """Lite simulation of the top linux command."""
 import datetime
-import random
 import sys
 import time
 from dataclasses import dataclass
@@ -9,6 +8,7 @@ from rich import box
 from rich.console import Console
 from rich.live import Live
 from rich.table import Table
+import secrets
 
 if sys.version_info >= (3, 8):
     from typing import Literal
@@ -43,12 +43,12 @@ def generate_process(pid: int) -> Process:
     return Process(
         pid=pid,
         command=f"Process {pid}",
-        cpu_percent=random.random() * 20,
-        memory=random.randint(10, 200) ** 3,
+        cpu_percent=secrets.SystemRandom().random() * 20,
+        memory=secrets.SystemRandom().randint(10, 200) ** 3,
         start_time=datetime.datetime.now()
-        - datetime.timedelta(seconds=random.randint(0, 500) ** 2),
-        thread_count=random.randint(1, 32),
-        state="running" if random.randint(0, 10) < 8 else "sleeping",
+        - datetime.timedelta(seconds=secrets.SystemRandom().randint(0, 500) ** 2),
+        thread_count=secrets.SystemRandom().randint(1, 32),
+        state="running" if secrets.SystemRandom().randint(0, 10) < 8 else "sleeping",
     )
 
 
