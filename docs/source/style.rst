@@ -71,8 +71,8 @@ To add a link to a style, the definition should contain the word ``"link"`` foll
     console.print("Google", style="link https://google.com")
 
 .. note::
-    If you are familiar with HTML you may find applying links in this way a little odd, but the terminal considers a link to be another attribute just like bold, italic etc. 
-    
+    If you are familiar with HTML you may find applying links in this way a little odd, but the terminal considers a link to be another attribute just like bold, italic etc.
+
 
 
 Style Class
@@ -96,7 +96,7 @@ Styles may be combined by adding them together, which is useful if you want to m
     console.print("Hello, World", style = base_style + Style(underline=True))
 
 You can parse a style definition explicitly with the :meth:`~rich.style.Style.parse` method, which accepts the style definition and returns a Style instance. For example, the following two lines are equivalent::
-    
+
     style = Style(color="magenta", bgcolor="yellow", italic=True)
     style = Style.parse("italic magenta on yellow")
 

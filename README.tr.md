@@ -302,7 +302,7 @@ Yukarıdaki kod parçacığı aşağıdaki gibi bir çıktı üretecektir.
 
 ![status](https://github.com/textualize/rich/raw/master/imgs/status.gif)
 
-Spin animasyonu [cli-spinners](https://www.npmjs.com/package/cli-spinners) kütüphanesinden alınmıştır. `spinner` parametresi ile seçeceğiniz spin şekilini kullanabilirsiniz. 
+Spin animasyonu [cli-spinners](https://www.npmjs.com/package/cli-spinners) kütüphanesinden alınmıştır. `spinner` parametresi ile seçeceğiniz spin şekilini kullanabilirsiniz.
 
 ```
 python -m rich.spinner

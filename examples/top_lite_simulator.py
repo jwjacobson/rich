@@ -1,5 +1,6 @@
 """Lite simulation of the top linux command."""
 import datetime
+import secrets
 import sys
 import time
 from dataclasses import dataclass
@@ -8,7 +9,6 @@ from rich import box
 from rich.console import Console
 from rich.live import Live
 from rich.table import Table
-import secrets
 
 if sys.version_info >= (3, 8):
     from typing import Literal

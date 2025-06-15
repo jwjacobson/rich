@@ -1,3 +1,4 @@
+import secrets
 import sys
 from threading import Event, RLock, Thread
 from types import TracebackType
@@ -11,7 +12,6 @@ from .jupyter import JupyterMixin
 from .live_render import LiveRender, VerticalOverflowMethod
 from .screen import Screen
 from .text import Text
-import secrets
 
 
 class _RefreshThread(Thread):

@@ -22,7 +22,7 @@ Welcome to Rich's documentation!
    prompt.rst
 
    columns.rst
-   group.rst   
+   group.rst
    markdown.rst
    padding.rst
    panel.rst

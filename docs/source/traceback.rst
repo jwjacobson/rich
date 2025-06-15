@@ -22,7 +22,7 @@ The :meth:`~rich.console.Console.print_exception` method will print a traceback 
         console.print_exception(show_locals=True)
 
 The ``show_locals=True`` parameter causes Rich to display the value of local variables for each frame of the traceback.
- 
+
 See `exception.py <https://github.com/willmcgugan/rich/blob/master/examples/exception.py>`_ for a larger example.
 
 
@@ -63,7 +63,7 @@ Suppressing Frames
 
 If you are working with a framework (click, django etc), you may only be interested in seeing the code from your own application within the traceback. You can exclude framework code by setting the `suppress` argument on `Traceback`, `install`, `Console.print_exception`, and `RichHandler`, which should be a list of modules or str paths.
 
-Here's how you would exclude `click <https://click.palletsprojects.com/en/8.0.x/>`_ from Rich exceptions:: 
+Here's how you would exclude `click <https://click.palletsprojects.com/en/8.0.x/>`_ from Rich exceptions::
 
     import click
     from rich.traceback import install
@@ -95,4 +95,3 @@ Here's an example of printing a recursive error::
         foo(1)
     except Exception:
         console.print_exception(max_frames=20)
-

@@ -9,7 +9,7 @@ Note that the first 16 colors are generally defined by the system or your termin
 
 .. raw:: html
 
-        
+
             <pre style="font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">╔════════════╤════════╤═══════════════════════╤═════════╤══════════════════╗
     ║<span style="font-weight: bold"> Color      </span>│<span style="font-weight: bold"> Number </span>│<span style="font-weight: bold"> Name                  </span>│<span style="font-weight: bold"> Hex     </span>│<span style="font-weight: bold"> RGB              </span>║
     ╟────────────┼────────┼───────────────────────┼─────────┼──────────────────╢

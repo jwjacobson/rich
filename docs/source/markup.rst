@@ -27,7 +27,7 @@ There is a shorthand for closing a style. If you omit the style name from the cl
 
     print("[bold red]Bold and red[/] not bold or red")
 
-These markup tags may be use in combination with each other and don't need to be strictly nested. The following example demonstrates overlapping of markup tags:: 
+These markup tags may be use in combination with each other and don't need to be strictly nested. The following example demonstrates overlapping of markup tags::
 
     print("[bold]Bold[italic] bold and italic [/bold]italic[/italic]")
 

@@ -3,5 +3,4 @@ rich
 
 .. automodule:: rich
     :members:
-    
 

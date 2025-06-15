@@ -54,4 +54,4 @@ You can use this class from the command line. Here's how you would syntax highli
 For the full list of arguments, run the following::
 
     python -m rich.syntax -h
-    
+

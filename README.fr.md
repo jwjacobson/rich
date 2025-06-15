@@ -365,7 +365,7 @@ console.print(markdown)
 Cela produira un résultat semblable à ce qui suit :
 
 ![markdown](https://github.com/textualize/rich/raw/master/imgs/markdown.png)
- 
+
 </details>
 
 <details>

@@ -5,7 +5,7 @@ Rich Text
 
 Rich has a :class:`~rich.text.Text` class you can use to mark up strings with color and style attributes. You can use a Text instance anywhere a string is accepted, which gives you a lot of control over presentation.
 
-You can consider this class to be like a string with marked up regions of text. Unlike a built-in ``str``, a Text instance is mutable, and most methods operate in-place rather than returning a new instance. 
+You can consider this class to be like a string with marked up regions of text. Unlike a built-in ``str``, a Text instance is mutable, and most methods operate in-place rather than returning a new instance.
 
 One way to add a style to Text is the :meth:`~rich.text.Text.stylize` method which applies a style to a start and end offset. Here is an example::
 
@@ -36,7 +36,7 @@ Since building Text instances from parts is a common requirement, Rich offers :m
     text = Text.assemble(("Hello", "bold magenta"), ", World!")
     console.print(text)
 
-You can apply a style to given words in the text with :meth:`~rich.text.Text.highlight_words` or for ultimate control call :meth:`~rich.text.Text.highlight_regex` to highlight text matching a *regular expression*. 
+You can apply a style to given words in the text with :meth:`~rich.text.Text.highlight_words` or for ultimate control call :meth:`~rich.text.Text.highlight_regex` to highlight text matching a *regular expression*.
 
 
 Text attributes
@@ -56,5 +56,3 @@ A Text instance may be used in place of a plain string virtually everywhere in t
     from rich.text import Text
     panel = Panel(Text("Hello", justify="right"))
     print(panel)
-
-

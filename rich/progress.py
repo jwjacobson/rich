@@ -1,4 +1,5 @@
 import io
+import secrets
 import sys
 import typing
 import warnings
@@ -33,7 +34,6 @@ from typing import (
     TypeVar,
     Union,
 )
-import secrets
 
 if sys.version_info >= (3, 8):
     from typing import Literal

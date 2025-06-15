@@ -1,12 +1,11 @@
 import sys
+from inspect import Parameter
 from typing import Optional
 
 import pytest
 
 import rich.repr
 from rich.console import Console
-
-from inspect import Parameter
 
 skip_py37 = pytest.mark.skipif(
     sys.version_info.minor == 7 and sys.version_info.major == 3,
